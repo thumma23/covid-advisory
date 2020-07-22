@@ -1,9 +1,9 @@
 from flask import Flask, request
 from flask_jwt import JWT, jwt_required
 from flask_restful import Resource, Api
-from COVID_Tracker_Data import COVID_Data
-from Authentication import authenticate, identity
-from User_db import Users_DB
+from covid_tracker_data import COVID_Data
+from authentication import authenticate, identity
+from user_db import Users_DB
 import config
 
 

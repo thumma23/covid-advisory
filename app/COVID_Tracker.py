@@ -1,5 +1,5 @@
 import requests
-from COVID_Tracker_Data import COVID_Data
+from covid_tracker_data import COVID_Data
 
 state = (input("Abbreviation of State: ")).lower()
 user_input = ""
