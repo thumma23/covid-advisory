@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_jwt import JWT, jwt_required
 from flask_restful import Resource, Api
 from covid_stats import COVID_Data
-from authentication import authenticate, identity
+from security import authenticate, identity
 from user_database import Users_DB
 import config
 
