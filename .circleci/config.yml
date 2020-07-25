@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: /Users/sahiththumma/Library/Mobile\ Documents/com\~apple\~CloudDocs/devzone/pylab/covid_package/tests/test_covid_advisory.py  test
+          command: /Users/sahiththumma/Library/Mobile\ Documents/com\~apple\~CloudDocs/devzone/pylab/covid_package/tests/test_covid_advisory.py test
           name: Test
 
 workflows:
