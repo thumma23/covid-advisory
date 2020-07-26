@@ -14,6 +14,21 @@ jobs:
       - run:
           command: python3 ./tests/test_covid_advisory.py test
           name: Test
+      - run: 
+          name: init .pypric
+          command: |
+            echo -e "[pypi]" >> ~/.pypirc
+            echo -e "username = sthumma23" >> ~/.pypirc
+            echo -e "password = Drueke@2001" >> ~/.pypirc
+      - run:
+          name: create packages
+          command: |
+            make package
+      - run:
+          name: upload to pypi
+          command: |
+            . venv/bin/activate
+            twine upload dist/*
 
 workflows:
   main:
