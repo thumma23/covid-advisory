@@ -6,4 +6,3 @@ requests
 datetime
 numpy
 mysql-connector
-python-virtualenv
