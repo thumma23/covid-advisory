@@ -1,14 +1,14 @@
 from flask import Flask, request
 from flask_jwt import JWT, jwt_required
 from flask_restful import Resource, Api
-from covid_stats import COVID_Data
-from security import authenticate, identity
-from user_database import Users_DB
-import config
+from .covid_stats import COVID_Data
+from .security import authenticate, identity
+from .user_database import Users_DB
+from .config import jwt_cfg
 
 
 app = Flask(__name__)
-app.secret_key = config.jwt_cfg['secret_key']
+app.secret_key = jwt_cfg['secret_key']
 
 jwt = JWT(app, authenticate, identity)
 
