@@ -40,6 +40,5 @@ def register_user():
     user_DB.register()
     return "Register Was Successful"
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+
 
