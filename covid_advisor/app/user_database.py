@@ -1,11 +1,11 @@
 import mysql.connector as mysql
-import config
+from .config import database_cfg
 
 user_db = mysql.connect(
-    host = config.database_cfg['host'],
-    user = config.database_cfg['user'],
-    passwd = config.database_cfg['passwd'],
-    database = config.database_cfg['database']
+    host = database_cfg['host'],
+    user = database_cfg['user'],
+    passwd = database_cfg['passwd'],
+    database = database_cfg['database']
 )
 
 db_cursor = user_db.cursor()
