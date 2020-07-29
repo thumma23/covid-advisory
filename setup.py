@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="covid_package", # Replace with your own username
+    name="covid-advisory", # Replace with your own username
     version="0.0.3",
     author="Example Author",
     author_email="author@example.com",
